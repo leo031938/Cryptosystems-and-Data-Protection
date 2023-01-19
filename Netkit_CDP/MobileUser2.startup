@@ -1,0 +1,13 @@
+###############################
+#
+# MobileUser2.startup
+#
+###############################
+
+ip link set dev eth0 address 00:00:00:00:01:02
+ip addr add 22.39.222.2/24 dev eth0
+ip link set up dev eth0
+
+ip route add default via 22.39.222.3
+
+wg-quick up MobileUser2_wg0
