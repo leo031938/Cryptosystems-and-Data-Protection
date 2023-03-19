@@ -1,0 +1,14 @@
+accept
+accept4
+bind
+capget
+capset
+chdir
+chown
+close
+connect
+creat
+dup2
+epoll_create
+epoll_ctl
+epoll_wait

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+./strip-image  \
+  -i local/chat \
+  -p nmap-ncat \
+  -d Dockerfile \
+  -t local/chat-stripped \
+  -t local/chat-stripped:18.01
+
+
