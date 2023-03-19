@@ -1,0 +1,134 @@
+{
+	"defaultAction": "SCMP_ACT_ERRNO",
+	"archMap": [
+		{
+			"architecture": "SCMP_ARCH_X86_64",
+			"subArchitectures": [
+				"SCMP_ARCH_X86",
+				"SCMP_ARCH_X32"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_AARCH64",
+			"subArchitectures": [
+				"SCMP_ARCH_ARM"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPS64",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPS",
+				"SCMP_ARCH_MIPS64N32"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPS64N32",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPS",
+				"SCMP_ARCH_MIPS64"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPSEL64",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPSEL",
+				"SCMP_ARCH_MIPSEL64N32"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPSEL64N32",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPSEL",
+				"SCMP_ARCH_MIPSEL64"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_S390X",
+			"subArchitectures": [
+				"SCMP_ARCH_S390"
+			]
+		}
+	],
+	"syscalls": [
+		{
+			"names": [
+"accept4",
+"bind",
+"capget",
+"capset",
+"chdir",
+"chown",
+"close",
+"connect",
+"creat",
+"dup2",
+"epoll_create",
+"epoll_ctl",
+"epoll_wait",
+"epoll_wait_old",
+"execve",
+"faccessat",
+"fcntl",
+"fstat",
+"fstatfs",
+"futex",
+"getcwd",
+"getdents",
+"getdents64",
+"getpgrp",
+"getppid",
+"getrlimit",
+"getsockopt",
+"ioctl",
+"listen",
+"lstat",
+"mkdir",
+"mmap",
+"mprotect",
+"newfstatat",
+"open",
+"openat",
+"poll",
+"prctl",
+"pread64",
+"pwrite64",
+"read",
+"recvfrom",
+"rt_sigaction",
+"rt_sigprocmask",
+"rt_sigreturn",
+"sendto",
+"setgid",
+"setgroups",
+"setsid",
+"setsockopt",
+"setuid",
+"shutdown",
+"socket",
+"socketpair",
+"stat",
+"uname",
+"wait4",
+"write",
+"writev",
+"ptrace",
+"set_tls",
+"arch_prctl",
+"s390_runtime_instr",
+"clone",
+"unshare",
+"clone",
+"finit_module",
+"ptrace",
+"ioperm",
+"clock_settime",
+"set_mempolicy"
+			],
+			"action": "SCMP_ACT_ALLOW",
+			"args": [],
+			"comment": "",
+			"includes": {},
+			"excludes": {}
+		}
+	]
+}

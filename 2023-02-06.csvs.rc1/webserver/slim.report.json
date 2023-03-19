@@ -1,0 +1,334 @@
+{
+  "version": "1.1",
+  "engine": "linux|Transformer|1.40.0|a4bb798922820523fceedb9121f5bcfdfc9f2901|2023-01-15_09:42:23PM",
+  "containerized": false,
+  "host_distro": {
+    "name": "CentOS Linux",
+    "version": "7",
+    "display_name": "CentOS Linux 7 (Core)"
+  },
+  "type": "build",
+  "state": "done",
+  "target_reference": "u2126529/csvs2023-web_i:latest",
+  "system": {
+    "type": "",
+    "release": "",
+    "distro": {
+      "name": "",
+      "version": "",
+      "display_name": ""
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": "sha256:13dba5bbbe1764617a7d133d0fc3014bd67bb1ff53e3d8d60201a2eede6f0b79",
+      "tags": [
+        "latest"
+      ],
+      "names": [
+        "u2126529/csvs2023-web_i:latest"
+      ]
+    },
+    "size": 643027254,
+    "size_human": "643 MB",
+    "create_time": "2023-02-16T16:21:40Z",
+    "docker_version": "20.10.19",
+    "architecture": "amd64",
+    "exposed_ports": [
+      "80/tcp"
+    ],
+    "os": "linux",
+    "labels": {
+      "org.label-schema.build-date": "20201113",
+      "org.label-schema.license": "GPLv2",
+      "org.label-schema.name": "CentOS Base Image",
+      "org.label-schema.schema-version": "1.0",
+      "org.label-schema.vendor": "CentOS",
+      "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+      "org.opencontainers.image.licenses": "GPL-2.0-only",
+      "org.opencontainers.image.title": "CentOS Base Image",
+      "org.opencontainers.image.vendor": "CentOS"
+    },
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 34301740,
+  "minified_image_size_human": "34 MB",
+  "minified_image": "u2126529/csvs2023-web_i.slim",
+  "minified_image_has_data": true,
+  "minified_by": 18.74619928901566,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/13dba5bbbe1764617a7d133d0fc3014bd67bb1ff53e3d8d60201a2eede6f0b79/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "u2126529-csvs2023-web_i-seccomp.json",
+  "apparmor_profile_name": "u2126529-csvs2023-web_i-apparmor-profile",
+  "image_stack": [
+    {
+      "is_top_image": false,
+      "id": "sha256:eeb6ee3f44bd0b5103bb561b4c16bcb82328cfe5809ab675bb17ab3a16c517c9",
+      "full_name": "centos:7",
+      "repo_name": "centos",
+      "version_tag": "7",
+      "raw_tags": [
+        "centos:7"
+      ],
+      "create_time": "2021-09-15T18:20:23Z",
+      "new_size": 203936249,
+      "new_size_human": "204 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2021-09-15T18:20:23Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 203936249,
+          "size_human": "204 MB",
+          "params": "file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in /",
+          "command_snippet": "ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b...",
+          "command_all": "ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 /",
+          "target": "/",
+          "source_type": "file",
+          "inst_set_time_bucket": "2021-09-15T19:15:00+01:00"
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-15T18:20:23Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+          "command_snippet": "LABEL org.label-schema.schema-version=1.0 or...",
+          "command_all": "LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+          "inst_set_time_bucket": "2021-09-15T19:15:00+01:00"
+        },
+        {
+          "type": "CMD",
+          "time": "2021-09-15T18:20:23Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"/bin/bash\"]\n",
+          "command_snippet": "CMD [\"/bin/bash\"]\n",
+          "command_all": "CMD [\"/bin/bash\"]\n",
+          "raw_tags": [
+            "centos:7"
+          ],
+          "inst_set_time_bucket": "2021-09-15T19:15:00+01:00"
+        }
+      ]
+    },
+    {
+      "is_top_image": true,
+      "id": "sha256:13dba5bbbe1764617a7d133d0fc3014bd67bb1ff53e3d8d60201a2eede6f0b79",
+      "full_name": "u2126529/csvs2023-web_i:latest",
+      "repo_name": "u2126529/csvs2023-web_i",
+      "version_tag": "latest",
+      "raw_tags": [
+        "u2126529/csvs2023-web_i:latest"
+      ],
+      "create_time": "2023-02-16T16:21:40Z",
+      "new_size": 439091005,
+      "new_size_human": "439 MB",
+      "base_image_id": "sha256:eeb6ee3f44bd0b5103bb561b4c16bcb82328cfe5809ab675bb17ab3a16c517c9",
+      "instructions": [
+        {
+          "type": "RUN",
+          "time": "2023-02-16T16:21:37Z",
+          "is_nop": false,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:8886cd07d0f66c1a8a4d68b9d90078646d35c122abedd7e43b8bc2a6c6ea0b80",
+          "layer_index": 0,
+          "size": 439004139,
+          "size_human": "439 MB",
+          "command_snippet": "RUN yum install epel-release -y && \\\n\tyum up...",
+          "command_all": "RUN yum install epel-release -y && \\\n\tyum update -y && \\\n\tyum install -y \tnginx \tphp \tphp-mysqlnd \tphp-fpm",
+          "system_commands": [
+            "yum install epel-release -y",
+            "yum update -y",
+            "yum install -y nginx php php-mysqlnd php-fpm"
+          ],
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "COPY",
+          "time": "2023-02-16T16:21:38Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:ec8646806c242bb4a3d52d5e1817882ddb72e1a731bb516efd2846c74104017d",
+          "layer_index": 0,
+          "size": 4429,
+          "size_human": "4.4 kB",
+          "params": "dir:aea71450400b29a6401c15153d1e0368c38534037e164a1e43ff414773be7079 in /usr/share/nginx/html",
+          "command_snippet": "COPY dir:aea71450400b29a6401c15153d1e0368c38...",
+          "command_all": "COPY dir:aea71450400b29a6401c15153d1e0368c38534037e164a1e43ff414773be7079 /usr/share/nginx/html",
+          "target": "/usr/share/nginx/html",
+          "source_type": "dir",
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "COPY",
+          "time": "2023-02-16T16:21:38Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:e531c222071770309058e9b8ddc764a98acaa13f853a6ee7100eca01cd4e790f",
+          "layer_index": 0,
+          "size": 2755,
+          "size_human": "2.8 kB",
+          "params": "file:c8e728a40ccc4b95b7f081d5d30167e06285e182daba5ca08475673b232bbce3 in /etc/nginx/nginx.conf",
+          "command_snippet": "COPY file:c8e728a40ccc4b95b7f081d5d30167e062...",
+          "command_all": "COPY file:c8e728a40ccc4b95b7f081d5d30167e06285e182daba5ca08475673b232bbce3 /etc/nginx/nginx.conf",
+          "target": "/etc/nginx/nginx.conf",
+          "source_type": "file",
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "COPY",
+          "time": "2023-02-16T16:21:38Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:a7088374738486b5886447595dc42f11a9a88db991f999ef5fe9b33ba7c86cde",
+          "layer_index": 0,
+          "size": 64944,
+          "size_human": "65 kB",
+          "params": "file:f38d9d323fea32534c3b3676b48874cbd9e796a2b6b0aba85fee016bb0834580 in /etc/php.ini",
+          "command_snippet": "COPY file:f38d9d323fea32534c3b3676b48874cbd9...",
+          "command_all": "COPY file:f38d9d323fea32534c3b3676b48874cbd9e796a2b6b0aba85fee016bb0834580 /etc/php.ini",
+          "target": "/etc/php.ini",
+          "source_type": "file",
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "COPY",
+          "time": "2023-02-16T16:21:39Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:75b314f187d710e6e79f9e6c9e75cffeed9c0efb2baf5d64390f538c3710baaa",
+          "layer_index": 0,
+          "size": 10021,
+          "size_human": "10 kB",
+          "params": "file:31af325d588e22209aa7a9c49830f89b8a3ad63721e69a1f2338d42f12b9ba53 in /etc/php-fpm.d/www.conf",
+          "command_snippet": "COPY file:31af325d588e22209aa7a9c49830f89b8a...",
+          "command_all": "COPY file:31af325d588e22209aa7a9c49830f89b8a3ad63721e69a1f2338d42f12b9ba53 /etc/php-fpm.d/www.conf",
+          "target": "/etc/php-fpm.d/www.conf",
+          "source_type": "file",
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "COPY",
+          "time": "2023-02-16T16:21:39Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:08d81acf1f8e3ee6836f5f4185efef6122afc0d66f57dc55ba2f51314810a6a8",
+          "layer_index": 0,
+          "size": 142,
+          "size_human": "142 B",
+          "params": "file:e808d6c568d4738a74442dd4bccef548778f281c89c1636b88d6cb7b77f16b9c in /etc/nginx/conf.d/php-fpm.conf",
+          "command_snippet": "COPY file:e808d6c568d4738a74442dd4bccef54877...",
+          "command_all": "COPY file:e808d6c568d4738a74442dd4bccef548778f281c89c1636b88d6cb7b77f16b9c /etc/nginx/conf.d/php-fpm.conf",
+          "target": "/etc/nginx/conf.d/php-fpm.conf",
+          "source_type": "file",
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "COPY",
+          "time": "2023-02-16T16:21:39Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:10fd905a2d3151df4a7066a055e90d6a3161c3141140b97430d0bc9caeb4010b",
+          "layer_index": 0,
+          "size": 73,
+          "size_human": "73 B",
+          "params": "file:ab90376cb68cdd2ef99a1dca8d3d821c5306234ff1731f2faed866420ae27f25 in /",
+          "command_snippet": "COPY file:ab90376cb68cdd2ef99a1dca8d3d821c53...",
+          "command_all": "COPY file:ab90376cb68cdd2ef99a1dca8d3d821c5306234ff1731f2faed866420ae27f25 /",
+          "target": "/",
+          "source_type": "file",
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "RUN",
+          "time": "2023-02-16T16:21:40Z",
+          "is_nop": false,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:0b284595809629f272e3c46f38c250de57566f9f71c0aa825cd5f4ba759948f5",
+          "layer_index": 0,
+          "size": 0,
+          "command_snippet": "RUN rm -f /usr/share/nginx/html/index.html /...",
+          "command_all": "RUN rm -f /usr/share/nginx/html/index.html /usr/share/nginx/html/nginx-logo.png /usr/share/nginx/html/poweredby.png",
+          "system_commands": [
+            "rm -f /usr/share/nginx/html/index.html /usr/share/nginx/html/nginx-logo.png /usr/share/nginx/html/poweredby.png"
+          ],
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "RUN",
+          "time": "2023-02-16T16:21:40Z",
+          "is_nop": false,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:b22412139638b81ba824f9f5178fd204b559251da39542934779083a141e2fc0",
+          "layer_index": 0,
+          "size": 4502,
+          "size_human": "4.5 kB",
+          "command_snippet": "RUN chmod +x /docker-entrypoint.sh && \\\n\tcho...",
+          "command_all": "RUN chmod +x /docker-entrypoint.sh && \\\n\tchown apache:apache /usr/share/nginx/html/*.php",
+          "system_commands": [
+            "chmod +x /docker-entrypoint.sh",
+            "chown apache:apache /usr/share/nginx/html/*.php"
+          ],
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2023-02-16T16:21:40Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:2630b63be98c61b717e3e469d6a54ffbadb8c8d2ecec90a31f7b1ff64cd855b8",
+          "layer_index": 0,
+          "size": 0,
+          "params": "80",
+          "command_snippet": "EXPOSE 80",
+          "command_all": "EXPOSE 80",
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2023-02-16T16:21:40Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"/docker-entrypoint.sh\"]\n",
+          "command_snippet": "ENTRYPOINT [\"/docker-entrypoint.sh\"]\n",
+          "command_all": "ENTRYPOINT [\"/docker-entrypoint.sh\"]\n",
+          "raw_tags": [
+            "u2126529/csvs2023-web_i:latest"
+          ],
+          "inst_set_time_bucket": "2023-02-16T16:15:00Z",
+          "inst_set_time_index": 1
+        }
+      ]
+    }
+  ],
+  "image_created": true,
+  "image_build_engine": "docker"
+}
