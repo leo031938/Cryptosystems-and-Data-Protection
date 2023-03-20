@@ -3644,13 +3644,11 @@ require {
 	type DB_t;
 	type mysqld_port_t;
 	type node_t;
-	class netlink_route_socket { bind create getattSr write nlmsg_read read};
 	class tcp_socket { name_bind bind setopt create accept getattr listen read write node_bind};
 }
 #============= DB_t ==============
 allow DB_t mysqld_port_t:tcp_socket name_bind;
 allow DB_t node_t:tcp_socket node_bind;
-allow DB_t self:netlink_route_socket { bind create getattr write nlmsg_read read};
 allow DB_t self:tcp_socket { name_bind bind setopt create accept getattr listen read write node_bind};
 
 

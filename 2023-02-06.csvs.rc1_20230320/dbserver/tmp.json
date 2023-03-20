@@ -57,6 +57,7 @@
 				"access",
 				"adjtimex",
 				"alarm",
+				"bind",
 				"brk",
 				"capget",
 				"capset",
@@ -390,7 +391,6 @@
 				"waitid",
 				"waitpid",
 				"write",
-				"writev"
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],

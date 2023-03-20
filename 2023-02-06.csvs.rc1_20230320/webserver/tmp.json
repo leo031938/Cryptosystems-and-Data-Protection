@@ -88,6 +88,7 @@
 				"epoll_pwait",
 				"epoll_pwait2",
 				"epoll_wait",
+				"epoll_wait_old",
 				"eventfd",
 				"eventfd2",
 				"execve",
@@ -390,7 +391,6 @@
 				"waitid",
 				"waitpid",
 				"write",
-				"writev"
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],

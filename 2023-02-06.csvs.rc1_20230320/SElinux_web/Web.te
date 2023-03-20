@@ -1,4 +1,4 @@
-policy_module(Web,0.8)
+policy_module(Web,1)
 # pn: 2022-01-26: updated with dontaudit additions
 # derived from:
 #   Original material from James Dorgan
