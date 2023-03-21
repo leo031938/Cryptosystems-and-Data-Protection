@@ -12,18 +12,31 @@ do
   # Wait for container to start
   sleep 10s
   echo "sleep"
+  
   # prepare for database
-  timeout 3 docker exec -i u2126529_csvs2023-db_c mysql -uroot -pCorrectHorseBatteryStaple < sqlconfig/csvs23db.sql  
-  echo "prepare for database"
-  # Send GET request
-  Get_response=$(curl --write-out "%{http_code}" --silent --output /dev/null --max-time 5 http://localhost/index.php)
- 
+  timeout 3 docker exec -i u2126529_csvs2023-db_c mysql -uroot -pCorrectHorseBatteryStaple < sqlconfig/csvs23db.sql
+
   # Send POST request
   value=$RANDOM
   echo $value
-  Post_response=$(curl --write-out "%{http_code}" --silent --output /dev/null --max-time 5 -X POST -d "fullname=$value&suggestion=$value" http://localhost/action.php)
+  Post_response=$(curl --write-out "%{http_code}" --silent --output /dev/null --max-time 3 -X POST -d "fullname=$value&suggestion=$value" http://localhost/action.php)
+  echo $Post_response
 
-  if [[ $Get_response -eq 200 && $Post_response -eq 302 ]]; then
+  # Send GET request
+  Get_response=$(curl --write-out "%{http_code}" --silent --output /dev/null --max-time 3 http://localhost/index.php)
+  echo $Get_response
+
+  # Send value request
+  Get_value=$(curl --silent --max-time 3 http://localhost/index.php | grep -o "$value")
+  echo $Get_value
+  
+
+  # Send error request
+  Get_error=$(curl -s --max-time 3 http://localhost/index.php/12345 | grep -o "error")
+  echo $Get_error
+
+
+  if [[ $Get_response -eq 200 && $Get_value == *"$value"* && $Post_response -eq 302 && $Get_error == *"error"* ]]; then
     echo "$s is running properly, do nothing"
 	
   else 
@@ -31,7 +44,6 @@ do
     echo $s >> list-of-min-syscalls
 
   fi
-
   # kill docker
   docker kill u2126529_csvs2023-db_c
 

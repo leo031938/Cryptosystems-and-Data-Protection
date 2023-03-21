@@ -1,14 +1,8 @@
 # Webserver Dockerfile
 
 FROM centos:7
-#FROM php:7.4-fpm
 
-# php-fpm
-#RUN sed -i 's/user = www-data/user = root/g' /usr/local/etc/php-fpm.d/www.conf \
-#    && sed -i 's/group = www-data/group = root/g' /usr/local/etc/php-fpm.d/www.conf
 
-# nginx
-#RUN sed -i 's/user nginx;/user root;/g' /etc/nginx/nginx.conf
 
 RUN 	yum install epel-release -y && \
 	yum update -y && \

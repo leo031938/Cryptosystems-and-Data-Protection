@@ -16,16 +16,19 @@ require {
 	type node_t;
 	type Web_t;
 	type mysqld_port_t;
-	class capability { chown net_bind_service setgid setuid };
+	type user_home_t;
+	class capability { chown net_bind_service setgid setuid dac_override};
 	class tcp_socket { bind create listen name_bind node_bind setopt accept read write connect getattr name_connect getopt};
+	class file { open read };
 	
 }
 #============= Web_t ==============
 allow Web_t http_port_t:tcp_socket name_bind;
 allow Web_t node_t:tcp_socket node_bind;
-allow Web_t self:capability { chown net_bind_service setgid setuid };
+allow Web_t self:capability { chown net_bind_service setgid setuid dac_override};
 allow Web_t self:tcp_socket { bind create listen name_bind node_bind setopt accept read write connect getattr name_connect getopt};
 allow Web_t mysqld_port_t:tcp_socket name_connect;
+allow Web_t user_home_t:file { open read };
 
 ################# end audit2allow additions ##################
 
@@ -73,7 +76,7 @@ allow Web_t mysqld_port_t:tcp_socket name_connect;
 #   sudo semodule -i Web.pp
 
 #   # confirm it is present (and check the version number)
-#   sudo semodule -l | grep docker
+#   sudo semodule -l | grep Web
 
 #   # invoke the container with the policy applied
 #   docker run ... --security-opt label:type:Web_t ...

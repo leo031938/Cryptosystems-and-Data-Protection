@@ -391,10 +391,10 @@
 				"waitid",
 				"waitpid",
 				"write",
+				"writev"
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {},
 			"excludes": {}
 		},
@@ -404,7 +404,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": null,
-			"comment": "",
 			"includes": {
 				"minKernel": "4.8"
 			},
@@ -422,7 +421,6 @@
 					"op": "SCMP_CMP_EQ"
 				}
 			],
-			"comment": "",
 			"includes": {},
 			"excludes": {}
 		},
@@ -438,7 +436,6 @@
 					"op": "SCMP_CMP_EQ"
 				}
 			],
-			"comment": "",
 			"includes": {},
 			"excludes": {}
 		},
@@ -454,7 +451,6 @@
 					"op": "SCMP_CMP_EQ"
 				}
 			],
-			"comment": "",
 			"includes": {},
 			"excludes": {}
 		},
@@ -470,7 +466,6 @@
 					"op": "SCMP_CMP_EQ"
 				}
 			],
-			"comment": "",
 			"includes": {},
 			"excludes": {}
 		},
@@ -486,7 +481,6 @@
 					"op": "SCMP_CMP_EQ"
 				}
 			],
-			"comment": "",
 			"includes": {},
 			"excludes": {}
 		},
@@ -496,7 +490,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"arches": [
 					"ppc64le"
@@ -515,7 +508,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"arches": [
 					"arm",
@@ -530,7 +522,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"arches": [
 					"amd64",
@@ -545,7 +536,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"arches": [
 					"amd64",
@@ -563,7 +553,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"arches": [
 					"s390",
@@ -578,7 +567,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_DAC_READ_SEARCH"
@@ -612,7 +600,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_ADMIN"
@@ -632,7 +619,6 @@
 					"op": "SCMP_CMP_MASKED_EQ"
 				}
 			],
-			"comment": "",
 			"includes": {},
 			"excludes": {
 				"caps": [
@@ -675,7 +661,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_BOOT"
@@ -689,7 +674,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_CHROOT"
@@ -705,7 +689,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_MODULE"
@@ -719,7 +702,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_PACCT"
@@ -738,7 +720,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_PTRACE"
@@ -753,7 +734,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_RAWIO"
@@ -769,7 +749,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_TIME"
@@ -783,7 +762,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_TTY_CONFIG"
@@ -799,7 +777,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYS_NICE"
@@ -813,7 +790,6 @@
 			],
 			"action": "SCMP_ACT_ALLOW",
 			"args": [],
-			"comment": "",
 			"includes": {
 				"caps": [
 					"CAP_SYSLOG"
