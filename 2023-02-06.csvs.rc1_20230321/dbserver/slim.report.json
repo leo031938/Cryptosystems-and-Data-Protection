@@ -8,7 +8,7 @@
     "display_name": "CentOS Linux 7 (Core)"
   },
   "type": "build",
-  "state": "error",
+  "state": "done",
   "target_reference": "u2126529_csvs2023-db_i:latest",
   "system": {
     "type": "",
@@ -21,26 +21,61 @@
   },
   "source_image": {
     "identity": {
-      "id": ""
+      "id": "sha256:ceab79cec2ca377e670cdfc7883412f2b3e54499076da71023555fb7100a7d12",
+      "tags": [
+        "1",
+        "latest"
+      ],
+      "names": [
+        "u2126529_csvs2023-db_i:1",
+        "u2126529_csvs2023-db_i:latest"
+      ]
     },
-    "size": 0,
-    "size_human": "",
-    "create_time": "",
-    "docker_version": "",
-    "architecture": "",
+    "size": 400556688,
+    "size_human": "401 MB",
+    "create_time": "2023-03-20T23:23:56Z",
+    "docker_version": "20.10.19",
+    "architecture": "amd64",
+    "user": "mysql",
+    "exposed_ports": [
+      "3306/tcp"
+    ],
+    "os": "linux",
+    "volumes": [
+      "/var/lib/mysql"
+    ],
+    "labels": {
+      "org.opencontainers.image.authors": "MariaDB Community",
+      "org.opencontainers.image.base.name": "docker.io/library/ubuntu:jammy",
+      "org.opencontainers.image.description": "MariaDB Database for relational SQL",
+      "org.opencontainers.image.documentation": "https://hub.docker.com/_/mariadb/",
+      "org.opencontainers.image.licenses": "GPL-2.0",
+      "org.opencontainers.image.ref.name": "ubuntu",
+      "org.opencontainers.image.source": "https://github.com/MariaDB/mariadb-docker",
+      "org.opencontainers.image.title": "MariaDB Database",
+      "org.opencontainers.image.url": "https://github.com/MariaDB/mariadb-docker",
+      "org.opencontainers.image.vendor": "MariaDB Community",
+      "org.opencontainers.image.version": "10.11.2"
+    },
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOSU_VERSION=1.14",
+      "LANG=C.UTF-8",
+      "MARIADB_VERSION=1:10.11.2+maria~ubu2204"
+    ],
     "container_entry": {
       "exe_path": ""
     }
   },
-  "minified_image_size": 0,
-  "minified_image_size_human": "",
-  "minified_image": "",
-  "minified_image_has_data": false,
-  "minified_by": 0,
-  "artifact_location": "",
-  "container_report_name": "",
-  "seccomp_profile_name": "",
-  "apparmor_profile_name": "",
+  "minified_image_size": 224455181,
+  "minified_image_size_human": "224 MB",
+  "minified_image": "u2126529_csvs2023-db_i.slim",
+  "minified_image_has_data": true,
+  "minified_by": 1.7845731438028156,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/ceab79cec2ca377e670cdfc7883412f2b3e54499076da71023555fb7100a7d12/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "u2126529_csvs2023-db_i-seccomp.json",
+  "apparmor_profile_name": "u2126529_csvs2023-db_i-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": false,
@@ -511,6 +546,6 @@
       ]
     }
   ],
-  "image_created": false,
-  "image_build_engine": ""
+  "image_created": true,
+  "image_build_engine": "docker"
 }

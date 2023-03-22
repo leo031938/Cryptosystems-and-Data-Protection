@@ -121,7 +121,8 @@
 "unshare",
 "wait4",
 "write",
-"writev"
+"writev",
+"getcwd"
 
 
 			],
