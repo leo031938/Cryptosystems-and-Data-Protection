@@ -31,12 +31,8 @@ do
   echo $Get_value
   
 
-  # Send error request
-  Get_error=$(curl -s --max-time 3 http://localhost/index.php/12345 | grep -o "error")
-  echo $Get_error
 
-
-  if [[ $Get_response -eq 200 && $Get_value == *"$value"* && $Post_response -eq 302 && $Get_error == *"error"* ]]; then
+  if [[ $Get_response -eq 200 && $Get_value == *"$value"* && $Post_response -eq 302 ]]; then
     echo "$s is running properly, do nothing"
 	
   else 

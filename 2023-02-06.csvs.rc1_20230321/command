@@ -12,6 +12,7 @@ docker run -d --rm --net u2126529/csvs2023_n --ip 203.0.113.201 --hostname db.cy
 --security-opt label:type:DB_t \
 --security-opt seccomp:list-of-min-syscalls-db.json \
 --cap-drop=ALL \
+-v mysql:/var/lib/mysql \
 u2126529_csvs2023-db_i
 
 
@@ -33,8 +34,6 @@ docker run -d --rm --net u2126529/csvs2023_n --ip 203.0.113.200 --hostname www.c
 u2126529/csvs2023-web_i
 
 
-
-
 --cap-drop=ALL \
 --cap-add=chown \
 --cap-add=net_bind_service \
@@ -52,7 +51,7 @@ docker run -d --rm --net u2126529/csvs2023_n --ip 203.0.113.200 --hostname www.c
 --cap-add=net_bind_service \
 --cap-add=setgid \
 --cap-add=setuid \
---cap-add=dac_override 
+--cap-add=dac_override \
 u2126529/csvs2023-web_i
 
 
