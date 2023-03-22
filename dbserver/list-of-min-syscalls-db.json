@@ -1,0 +1,141 @@
+{
+	"defaultAction": "SCMP_ACT_ERRNO",
+	"archMap": [
+		{
+			"architecture": "SCMP_ARCH_X86_64",
+			"subArchitectures": [
+				"SCMP_ARCH_X86",
+				"SCMP_ARCH_X32"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_AARCH64",
+			"subArchitectures": [
+				"SCMP_ARCH_ARM"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPS64",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPS",
+				"SCMP_ARCH_MIPS64N32"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPS64N32",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPS",
+				"SCMP_ARCH_MIPS64"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPSEL64",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPSEL",
+				"SCMP_ARCH_MIPSEL64N32"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_MIPSEL64N32",
+			"subArchitectures": [
+				"SCMP_ARCH_MIPSEL",
+				"SCMP_ARCH_MIPSEL64"
+			]
+		},
+		{
+			"architecture": "SCMP_ARCH_S390X",
+			"subArchitectures": [
+				"SCMP_ARCH_S390"
+			]
+		}
+	],
+	"syscalls": [
+		{
+			"names": [
+
+"accept4",
+"access",
+"arch_prctl",
+"bind",
+"capget",
+"capset",
+"chdir",
+"clock_nanosleep",
+"clock_settime",
+"clone",
+"close",
+"connect",
+"dup2",
+"epoll_ctl",
+"epoll_pwait",
+"execve",
+"exit",
+"faccessat",
+"fallocate",
+"fchdir",
+"fcntl",
+"fdatasync",
+"finit_module",
+"fstat",
+"fstatfs",
+"ftruncate",
+"futex",
+"getcwd",
+"getdents64",
+"getpeername",
+"getpgrp",
+"getpid",
+"getppid",
+"ioperm",
+"kill",
+"listen",
+"lseek",
+"mkdir",
+"mmap",
+"mprotect",
+"munmap",
+"newfstatat",
+"openat",
+"pipe2",
+"poll",
+"prctl",
+"pread64",
+"ptrace",
+"pwrite64",
+"read",
+"readlink",
+"recvfrom",
+"rename",
+"rt_sigaction",
+"rt_sigprocmask",
+"rt_sigreturn",
+"rt_sigtimedwait",
+"s390_runtime_instr",
+"sendto",
+"setgid",
+"setgroups",
+"set_mempolicy",
+"setsockopt",
+"set_tid_address",
+"set_tls",
+"setuid",
+"sigaltstack",
+"socket",
+"tgkill",
+"uname",
+"unlink",
+"unshare",
+"vfork",
+"wait4",
+"write",
+"writev"
+
+			],
+			"action": "SCMP_ACT_ALLOW",
+			"args": [],
+			"comment": "",
+			"includes": {},
+			"excludes": {}
+		}
+	]
+}
