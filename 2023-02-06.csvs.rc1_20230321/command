@@ -23,9 +23,7 @@ docker exec -i u2126529_csvs2023-db_c mysql -uroot -pCorrectHorseBatteryStaple <
 
 
 all&slim:
-build --target u2126529_csvs2023-db_i:latest --env "MYSQL_ROOT_PASSWORD="CorrectHorseBatteryStaple" --env "MYSQL_DATABASE="csvs23db" --include-path '/etc/' --include-path '/var/' --include-path '/bin/' --include-path '/usr/' --http-probe-off --tag u2126529_csvs2023-db_i.slim
-
-
+build --target u2126529_csvs2023-db_i:latest --env "MYSQL_ROOT_PASSWORD="CorrectHorseBatteryStaple" --env "MYSQL_DATABASE="csvs23db" --include-path '/etc/mysql/conf.d' --include-path '/run/mysqld/' --http-probe-off --tag u2126529_csvs2023-db_i.slim
 
 docker run -d --rm --net u2126529/csvs2023_n --ip 203.0.113.201 --hostname db.cyber23.test -e MYSQL_ROOT_PASSWORD="CorrectHorseBatteryStaple" -e MYSQL_DATABASE="csvs23db" --name u2126529_csvs2023-db_c \
 --security-opt label:type:DB_t \
@@ -33,8 +31,6 @@ docker run -d --rm --net u2126529/csvs2023_n --ip 203.0.113.201 --hostname db.cy
 --cap-drop=ALL \
 -v mysql:/var/lib/mysql \
 u2126529_csvs2023-db_i.slim
-
-exitCode=127
 
 
 

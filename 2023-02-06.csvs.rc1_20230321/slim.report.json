@@ -67,11 +67,11 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 55227880,
-  "minified_image_size_human": "55 MB",
+  "minified_image_size": 57493906,
+  "minified_image_size_human": "58 MB",
   "minified_image": "u2126529_csvs2023-db_i.slim",
   "minified_image_has_data": true,
-  "minified_by": 7.252798550297422,
+  "minified_by": 6.966941644215302,
   "artifact_location": "/tmp/slim-state/.slim-state/images/ceab79cec2ca377e670cdfc7883412f2b3e54499076da71023555fb7100a7d12/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "u2126529_csvs2023-db_i-seccomp.json",
